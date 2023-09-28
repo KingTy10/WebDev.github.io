@@ -1,0 +1,55 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	font-family:Luminari;
+	background:#232423;
+	color:#748a7a;
+
+}
+
+
+div#container {
+	margin:auto;
+        width:800px;
+	border:1px solid black;
+	padding:25px;
+
+}
+
+header{
+font-family:Georgia;
+background-color:#2d5237;
+border:2px solid black;
+padding:15px;
+
+}
+
+footer{
+font-size:0.8em;
+background-color:#525252;
+padding:15px;
+}
+p{
+ 
+background-color:#525252 ;
+  width: 800px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 0px;
+
+}
+
