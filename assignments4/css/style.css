@@ -1,0 +1,112 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	background-color: rgb(188,3,43)
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+
+	h1{
+font-size:20px;	
+}
+
+h2{
+font-size:15px;	
+}
+.Rose{
+font-size:120px;
+font-family:'Caprasimo', serif;
+color:#FFFFFF;
+text-transform:uppercase;
+position:absolute;
+top:200px;
+left:200px;
+
+
+}
+
+.When{
+font-size:100px;
+font-family:'Bebas Neue', sans-serif;
+color:#000000;
+text-transform:lowercase;
+position:absolute;
+top:350px;
+left:500px;
+
+}
+
+.foul{
+font-size:150px;
+color:#FFFFFF;
+text-transform:uppercase;
+word-spacing:150px;
+position:absolute;
+top:600px;
+left:650px;
+font-family: 'Caprasimo', serif;
+}
+
+.swish{
+font-size:100px;
+color:#000000;
+text-transform:lowercase;
+position:absolute;
+top:850px;
+right:76px;
+font-family:'Bebas Neue', sans-serif;
+}
+
+.uh{
+font-size:100px;
+color:#FFFFFF;
+text-transform:uppercase;
+position:absolute;
+top:1050px;
+right:100px;
+font-family:'Caprasimo', serif
+}
+
+
+	
+.Juice{
+font-size:100px;
+color:#f0ccc5;
+text-transform:uppercase;
+position:absolute;
+top:1150px;
+right:26px;
+font-family:'Caprasimo', serif
+}
+
+
+
+footer{
+font-size:15px;
+position:absolute;
+bottom:1px;
+left:1px;	
+}
+
+	
+	
+}
+
+
+#container {
+	
+}
+
+
+
+
