@@ -1,0 +1,356 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+body {
+	background:#635373;
+	
+	
+}
+#object{
+	
+   
+       height:30px;
+	   width: 30px;
+  background-color:#152B42;
+  border: 1px solid black;
+  border-radius:50%;
+  padding:20px;
+ transition: transform 1s; 
+ margin-left:500px;
+}
+#object:hover{
+	margin-top:100px;
+	margin-left:100px;
+	height:60px;
+	width:60px;
+	background:#152B42;
+	boarder-radius:50%;
+	transform: rotate( 360deg);
+}
+	
+	
+	
+}
+#object2{
+	       border-style: solid;
+      border-color: transparent transparent red transparent;
+      border-width: 0 25px 25px 25px;
+      height: 0;
+      width: 50px;
+      box-sizing: content-box;
+   
+      margin-top: 200px ;
+    }
+    #object2:after {
+      content: "";
+      
+      top: 25px;
+      left: -25px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: red transparent transparent transparent;
+      border-width: 70px 50px 0 50px; 
+		transition-timing-function: ease;
+}
+#object2:hover{
+	
+	width: 300px
+}
+
+#object3{
+	   position: absolute;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+    }
+    #object3:before,
+    #object3:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 800;
+      left: 300;
+      width: 60px;
+      height: 60px;
+      border: 20px solid red;
+      border-radius: 50px 50px 0 50px;
+      transform: rotate(-45deg);
+    }
+    #object3:after {
+      left: auto;
+      right: 0;
+      border-radius: 50px 50px 50px 0;
+      transform: rotate(45deg);
+	   transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function:
+    }
+
+
+
+#object3:hover{
+	width: 300px;
+	
+}
+
+#object4{
+	 position: relative;
+      width: 100px;
+      height: 90px;
+    }
+    #object4:before,
+    #object4:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    #object4:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+     animation: object4 5s infinite;
+}
+
+@keyframes object4 {
+  50% {transform: rotate(180deg);}
+}
+#object5{
+	 width: 96px;
+      box-sizing: content-box;
+      height: 48px;
+      background: #eee;
+      border-color: red;
+      border-style: solid;
+      border-width: 2px 2px 50px 2px;
+      border-radius: 100%;
+      position: relative;
+    }
+    #object5:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      background: #eee;
+      border: 18px solid #A36584;
+      border-radius: 100%;
+      width: 12px;
+      height: 12px;
+      box-sizing: content-box;
+    }
+    #object5:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: white;
+      border: 18px solid #A36584;
+      border-radius: 100%;
+      width: 12px;
+      height: 12px;
+      box-sizing: content-box;
+
+ animation: object5 5s infinite;
+}
+
+@keyframes object5 {
+  50% {transform: rotate(180deg);}
+}
+
+#object6{
+	   margin: 50px 0;
+      position: relative;
+      display: block;
+      color: red;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid red;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg);
+    }
+    #object6:before {
+      border-bottom: 80px solid red;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #object6:after {
+      position: absolute;
+      display: block;
+      color: red;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid red;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+	  
+}
+
+
+#object6:hover{
+	 transform:scale(3);
+    transition: all 500ms;
+	
+}
+
+#object7{
+	 width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-bottom: 70px solid red;
+      position: relative;
+      top: -50px;
+    }
+    #object7:after {
+      content: '';
+      position: absolute;
+      left: -50px;
+      top: 70px;
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-top: 70px solid red;
+  transition: width 2s;
+}
+
+#object7:hover {
+  width: 300px;
+  height:400px;
+}
+
+#object8{
+	    font-size: 10em;
+      display: inline-block;
+      width: 0.4em;
+      box-sizing: content-box;
+      height: 0.4em;
+      border: 0.1em solid red;
+      position: relative;
+      border-radius: 0.35em;
+    }
+    #object8:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: -0.25em;
+      bottom: -0.1em;
+      border-width: 0;
+      background: red;
+      width: 0.35em;
+      height: 0.08em;
+      transform: rotate(45deg);
+	  transition-timing-function: ease-in-out;
+}
+
+
+#object8:hover{
+	width:499px;
+	height:200px;
+	
+}
+
+#object9{
+	      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 r #D97E96;
+	  
+ animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(730deg);
+}
+
+
+
+
+
+
+
+
+
+#object10{
+	font-size: 8px;
+    position: relative;
+    width: 18em;
+    height: 13em;
+    border-radius: 2em;
+    top: 10em;
+    box-sizing: border-box;
+    border: 3.5em solid red;
+    border-right-width: 7.5em;
+    border-left-width: 7.5em;
+    margin: 0 0 6rem 0;
+}
+  #object10:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: 2.5em solid red;
+    width: 14em;
+    height: 12em;
+    left: 50%;
+    margin-left: -7em;
+    top: -12em;
+    border-top-left-radius: 7em;
+    border-top-right-radius: 7em;
+  }
+  #object10:after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: 1em solid red;
+    width: 5em;
+    height: 8em;
+    border-radius: 2.5em;
+    left: 50%;
+    top: -1em;
+    margin-left: -2.5em;
+ transition: width 2s, height 4s;
+}
+
+#object10:hover {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+
+#container {
+	
+}
+
+
+
+
