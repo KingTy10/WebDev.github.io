@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>***</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<form>
+  
+<head>
+<script>
+
+      function textInput() {
+            var answers = [
+                "Purple",
+                "Green",
+                "Blue",
+                "Red",
+                "Orange",
+                "yellow",
+                "White",
+                "Pink",
+                "Brown",
+                "Grey",
+                "Gold",
+                "Black",
+                "Dark Green",
+                "Dark Blue"
+            ];   
+            answers = answers[Math.floor(Math.random() * answers.length)];
+            document.getElementById('msgResult').innerHTML = answers;
+        }
+    </script>
+</head>
+<body>
+    <div class="8ball">
+        <form>
+            <p>I can guess your favorite color <br> Do you think I can </p>
+            <input type="text" id="askBox">
+            <input type="button" id="answerbutton" onclick="textInput()" value="submit">
+			<p> Is it ?? ??</p>
+        </form>
+    </div>
+
+    <div class="answer">
+        <p id="msgResult"></p> 
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+  </div><!-- close "container" -->
+  
