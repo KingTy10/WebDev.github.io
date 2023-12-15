@@ -1,0 +1,102 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	background: #324ad1;
+	color: #b6bff2;
+	font-family: georgian;
+}
+div.Background1 {
+	margin:auto;
+	padding-top:25px;
+	height:60px;
+	text-align:center;
+}
+div.Links {
+	background-color:white;
+	
+}
+
+a.Links {
+	padding-left:10px;
+	padding-right:10px;
+	font-size:40px;
+}
+
+figure img {
+	height:800px;
+	margin:auto;
+	padding-top:60px;
+	padding-left:550px;
+}
+figcaption {
+	padding-left:400px;
+}
+
+div.rows {
+	margin:auto;
+	background-color:black;
+	width:500px;
+	height:1050px;
+	border-style:solid;
+}
+
+
+div.DBZ Shows {
+	width:40px;
+	height:100%;
+	float:left;
+}
+h1 { 
+text-align:center; 
+font-size:40px;
+background-color:white;
+height:40px;
+}
+
+h4 {
+	padding-top:15px;
+	font-size:1.5em;
+}
+div.Lists{
+	margin:auto;
+	background-color:#2c345e;
+	width:500px;
+	height:1050px;
+	border-style:solid;
+}
+h5{
+	padding-top:15px;
+	font-size:1.5em;
+}
+div.Arcs{
+	margin:auto;
+	background-color:#2c345e;
+	width:500px;
+	height:1050px;
+	border-style:solid;
+}
+h6{
+	padding-top:15px;
+	font-size:1.5em;
+}
+#container {
+	
+}
+
+
+
+
